@@ -1,73 +1,25 @@
 <!DOCTYPE html>
-<style type="text/css">
-    @media(prefers-color-scheme: light) {
-        body {
-            background-color: #fff;
-            color: #000;
-        }
-    }
-
-    @media(prefers-color-scheme: dark) {
-        body {
-            background-color: #000;
-            color: #fff;
-        }
-    }
-
-    @font-face {
-        font-family: "Averta Regular";
-        src: url("./fonts/averta-regular.otf") format("opentype");
-    }
-
-    .container {
-        height: 95vh;
-        position: relative;
-    }
-
-    .center {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-
-    .maintext {
-        font-size: 60px;
-        font-family: "Averta Regular";
-    }
-
-    @media only screen and (max-width: 900px) {
-        .maintext {
-            font-size: 40px;
-        }
-    }
-
-    @media only screen and (max-width: 700px) {
-        .maintext {
-            font-size: 30px;
-        }
-    }
-
-    @media only screen and (max-width: 500px) {
-        .maintext {
-            font-size: 20px;
-        }
-    }
-</style>
-
 <head>
-    <title>Meris Gutošić</title>
+  <link rel="stylesheet" href="index.css" />
+  <title>Meris Gutošić</title>
 </head>
 <html>
-
-<body>
+  <body>
     <div class="container">
-        <div class="center">
-            <p class="maintext">Hi, I'm Meris.</p>
-        </div>
+      <div class="center">
+        <p class="maintext">Hi, I'm Meris.</p>
+        <a
+          class="linkedin-link"
+          href="https://www.linkedin.com/in/merisgutosic"
+          target="_blank"
+        >
+          <object
+            data="./assets/linkedin-logo.svg"
+            type="image/svg+xml"
+            onload="this.parentNode.replaceChild(this.contentDocument.documentElement, this);"
+          ></object>
+        </a>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
